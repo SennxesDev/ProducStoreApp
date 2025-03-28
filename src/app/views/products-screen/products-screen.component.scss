@@ -5,28 +5,34 @@ body {
   margin: 0;
   padding: 0;
   height: 100vh;
+  color: #2d3436;
 }
 
+/* Contenido principal */
 .main-content {
   min-height: 80vh;
 }
 
-
+/* Estilos del pie de página */
 .footer {
   background-color: #1e2a47;
   position: absolute;
   bottom: 0;
   width: 100%;
+  padding: 20px 0;
 }
 
-
+/* Estilos de la tabla */
 .table {
   background-color: #1e2a47; /* Fondo oscuro para la tabla */
   border-color: #444; /* Borde gris oscuro para las celdas */
+  color: #1e2a47;
 }
 
 th, td {
-  color: #fff; /* Texto blanco para las celdas */
+  color: #0984e3;
+  text-align: center;
+  padding: 12px;
 }
 
 th {
@@ -43,4 +49,31 @@ button.mat-icon-button {
 button.mat-icon-button:hover {
   background-color: #2d3436; /* Fondo oscuro en hover */
   color: #fff; /* Cambiar color del icono en hover */
+}
+
+/* Estilo para el botón "Volver al inicio" */
+.text-center button {
+  margin-top: 20px;
+  font-size: 1rem;
+  padding: 10px 20px;
+  background-color: #0984e3;
+  color: white;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #2d3436;
+  }
+}
+
+/* Responsividad para dispositivos móviles */
+@media (max-width: 768px) {
+  .table {
+    font-size: 14px;
+  }
+
+  .text-center button {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
 }
