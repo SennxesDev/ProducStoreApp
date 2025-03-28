@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./cart-screen.component.scss']
 })
 export class CartScreenComponent {
-
+  cart = [
+    { name: 'Audífonos', image: 'assets/images/audifonos.jpg' },
+    { name: 'Smartwatch', image: 'assets/images/smartwatch.jpg' }
+  ];
 }

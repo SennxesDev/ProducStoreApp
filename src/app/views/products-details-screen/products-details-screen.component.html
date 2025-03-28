@@ -1,0 +1,18 @@
+<mat-card class="product-details">
+  <h2>{{ product.name }}</h2>
+  <p class="price">Precio: {{ product.price | currency }}</p>
+  <p class="description">{{ product.description }}</p>
+
+
+  <div class="button-group">
+    <button mat-raised-button color="primary" (click)="addToCart()">Agregar al carrito</button>
+    <button mat-button routerLink="/products" class="back-button">Volver</button>
+  </div>
+
+
+  <div class="cart-button">
+    <button mat-icon-button color="accent" (click)="goToCart()">
+      <mat-icon>shopping_cart</mat-icon> Ir al carrito
+    </button>
+  </div>
+</mat-card>

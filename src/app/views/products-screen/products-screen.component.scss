@@ -1,0 +1,46 @@
+/* Fondo general de la página con gradiente oscuro */
+body {
+  background: linear-gradient(135deg, #2d3436, #0984e3); /* Gradiente oscuro */
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+.main-content {
+  min-height: 80vh;
+}
+
+
+.footer {
+  background-color: #1e2a47;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+
+.table {
+  background-color: #1e2a47; /* Fondo oscuro para la tabla */
+  border-color: #444; /* Borde gris oscuro para las celdas */
+}
+
+th, td {
+  color: #fff; /* Texto blanco para las celdas */
+}
+
+th {
+  background-color: #333; /* Fondo gris oscuro para los encabezados */
+}
+
+/* Estilo para los botones de acción (iconos) */
+button.mat-icon-button {
+  color: #0984e3; /* Color de icono azul */
+  border-radius: 50%; /* Botón circular */
+  background-color: transparent;
+}
+
+button.mat-icon-button:hover {
+  background-color: #2d3436; /* Fondo oscuro en hover */
+  color: #fff; /* Cambiar color del icono en hover */
+}

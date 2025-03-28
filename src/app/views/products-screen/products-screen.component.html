@@ -1,0 +1,41 @@
+<h2 class="text-center text-light py-4">Lista de Productos</h2>
+
+<body>
+  <div class="container">
+    <table class="table table-bordered table-hover text-white">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nombre</th>
+          <th>Precio</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let product of products">
+          <td>{{ product.id }}</td>
+          <td>{{ product.name }}</td>
+          <td>{{ product.price | currency }}</td>
+          <td>
+            <button mat-icon-button [routerLink]="['/product', product.id]" class="text-white">
+              <mat-icon>visibility</mat-icon>
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    
+    <!-- Botón para volver al inicio -->
+    <div class="text-center">
+      <button mat-raised-button color="accent" [routerLink]="['/home']">Volver al inicio</button>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container text-center text-white py-3">
+      <p>Gerson González</p>
+      <p>2025 Product Store App</p>
+    </div>
+  </footer>
+</body>

@@ -1,0 +1,268 @@
+// Estilos generales
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #212121; /* Fondo oscuro */
+    color: #e0e0e0; /* Texto claro */
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  
+  .container {
+    padding: 20px;
+  }
+  
+  // Mat-card general con un fondo oscuro y sombras
+  mat-card {
+    background-color: #333; /* Fondo oscuro */
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    
+    h1, h2 {
+      font-family: 'Roboto', sans-serif;
+      color: #fff;
+    }
+  
+    button {
+      font-size: 1.1rem;
+      padding: 10px 30px;
+      background-color: #6200ea;
+      color: white;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+  
+      &:hover {
+        background-color: #3700b3;
+      }
+    }
+  }
+  
+  // Página de inicio (home)
+  .home {
+    .mat-card {
+      text-align: center;
+      padding: 40px;
+      h1 {
+        font-size: 3rem;
+        margin-bottom: 20px;
+        color: #6200ea;
+      }
+      button {
+        font-size: 1.2rem;
+        padding: 15px 40px;
+        background-color: #6200ea;
+        color: white;
+        border-radius: 4px;
+        transition: background-color 0.3s ease;
+        &:hover {
+          background-color: #3700b3;
+        }
+      }
+    }
+  }
+  
+  // Página de productos (product)
+  .product {
+    h2 {
+      text-align: center;
+      margin: 20px 0;
+      font-size: 2.5rem;
+      color: #6200ea;
+    }
+  
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      color: #fff;
+  
+      th {
+        background-color: #6200ea;
+        color: white;
+        padding: 12px;
+      }
+  
+      td {
+        padding: 12px;
+        text-align: center;
+        border: 1px solid #444;
+      }
+  
+      tr:hover {
+        background-color: #444;
+      }
+  
+      button {
+        background-color: transparent;
+        border: none;
+        color: #6200ea;
+        cursor: pointer;
+  
+        &:hover {
+          color: #3700b3;
+        }
+      }
+    }
+  }
+  
+  // Página de detalles del producto (product-details)
+  .product-details {
+    .mat-card {
+      text-align: center;
+      padding: 40px;
+      h2 {
+        font-size: 2.5rem;
+        color: #6200ea;
+      }
+  
+      p {
+        font-size: 1.2rem;
+        color: #e0e0e0;
+      }
+  
+      button {
+        margin-top: 15px;
+        font-size: 1.1rem;
+        padding: 10px 30px;
+        background-color: #6200ea;
+        color: white;
+        border-radius: 4px;
+        transition: background-color 0.3s ease;
+  
+        &:hover {
+          background-color: #3700b3;
+        }
+  
+        &.back-button {
+          background-color: transparent;
+          color: #6200ea;
+          border: 1px solid #6200ea;
+  
+          &:hover {
+            background-color: #444;
+          }
+        }
+      }
+    }
+  }
+  
+  // Página de carrito de compras (cart)
+  .cart {
+    h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      color: #6200ea;
+      margin-bottom: 20px;
+    }
+  
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+  
+      .col-md-4 {
+        max-width: 300px;
+  
+        .card {
+          border: none;
+          border-radius: 8px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          transition: transform 0.3s ease;
+          background-color: #424242;
+  
+          &:hover {
+            transform: scale(1.05);
+          }
+  
+          img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+          }
+  
+          .card-body {
+            padding: 10px;
+            text-align: center;
+  
+            .card-title {
+              font-size: 1.2rem;
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+  
+    .btn {
+      display: block;
+      width: 100%;
+      padding: 12px;
+      background-color: #6200ea;
+      color: white;
+      border-radius: 4px;
+      text-align: center;
+      margin-top: 30px;
+  
+      &:hover {
+        background-color: #3700b3;
+      }
+    }
+  }
+  
+  // Página acerca de (about)
+  .about {
+    .mat-card {
+      padding: 30px;
+      text-align: center;
+      background-color: #333;
+      color: white;
+  
+      h2 {
+        font-size: 2.5rem;
+        color: #6200ea;
+        margin-bottom: 20px;
+      }
+  
+      mat-accordion {
+        width: 100%;
+        margin-top: 20px;
+  
+        mat-expansion-panel {
+          margin-bottom: 10px;
+          background-color: #424242;
+  
+          mat-expansion-panel-header {
+            background-color: #6200ea;
+            color: white;
+          }
+  
+          mat-expansion-panel-header:hover {
+            background-color: #3700b3;
+          }
+  
+          p {
+            font-size: 1.2rem;
+            color: #e0e0e0;
+          }
+        }
+      }
+  
+      button {
+        margin-top: 20px;
+        font-size: 1.2rem;
+        padding: 10px 30px;
+        background-color: #6200ea;
+        color: white;
+        border-radius: 4px;
+  
+        &:hover {
+          background-color: #3700b3;
+        }
+      }
+    }
+  }
+  

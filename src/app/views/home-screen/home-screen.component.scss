@@ -1,0 +1,21 @@
+/* Fondo general de la página con gradiente oscuro */
+body {
+  background: linear-gradient(135deg, #2d3436, #0984e3); /* Gradiente oscuro */
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+/* Asegurarse de que el contenido principal no se desborde */
+.main-content {
+  min-height: 80vh;
+}
+
+/* Estilos del pie de página */
+.footer {
+  background-color: #1e2a47;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}

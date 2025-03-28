@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./home-screen.component.scss']
 })
 export class HomeScreenComponent {
-
+  navActive = false;
+  // Método para alternar la visibilidad del menú
+  toggleNav() {
+    this.navActive = !this.navActive;
+  }
 }

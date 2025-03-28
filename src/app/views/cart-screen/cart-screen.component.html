@@ -1,0 +1,12 @@
+<h2>Carrito de Compras</h2>
+<div class="row">
+  <div class="col-md-4" *ngFor="let product of cart">
+    <div class="card shadow-sm">
+      <img src="{{ product.image }}" class="card-img-top">
+      <div class="card-body">
+        <h5 class="card-title">{{ product.name }}</h5>
+      </div>
+    </div>
+  </div>
+</div>
+<button class="btn btn-primary mt-3" routerLink="/products">Seguir comprando</button>
